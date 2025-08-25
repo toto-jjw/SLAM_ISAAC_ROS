@@ -75,8 +75,8 @@ public:
     lookahead_cells_         = declare_parameter<int>("lookahead_cells", 3);
     advance_dist_thresh_     = declare_parameter<double>("advance_dist_thresh", 0.1);
     forward_check_n_         = declare_parameter<int>("forward_check_n", 20);
-    replan_min_interval_sec_ = declare_parameter<double>("replan_min_interval_sec", 4.0);
-    replan_max_interval_sec_ = declare_parameter<double>("replan_max_interval_sec", 10.0);
+    replan_min_interval_sec_ = declare_parameter<double>("replan_min_interval_sec", 1.0);
+    replan_max_interval_sec_ = declare_parameter<double>("replan_max_interval_sec", 4.0);
 
     // ★ 방향 A* 회전 가중치
     turn_weight_             = declare_parameter<double>("turn_weight", 2.0);
@@ -620,8 +620,8 @@ private:
   int     lookahead_cells_{3};
   double  advance_dist_thresh_{0.1};
   int     forward_check_n_{20};
-  double  replan_min_interval_sec_{4.0};
-  double  replan_max_interval_sec_{10.0};
+  double  replan_min_interval_sec_{1.0};
+  double  replan_max_interval_sec_{4.0};
   rclcpp::Time last_plan_time_{0,0,RCL_ROS_TIME};
 
   // 방향 A* 회전 가중치

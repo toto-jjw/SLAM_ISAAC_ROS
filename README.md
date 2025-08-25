@@ -1,22 +1,6 @@
 # location
 ~/workspaces/isaac_ros-dev/Portable_ORB_SLAM2/Examples/ROS2
 
-root@irsl-MS-7C79:/workspaces/isaac_ros-dev/Portable_ORB_SLAM2/Examples/ROS2# tree
-.
-├── orbslam2_ros2_mono
-│   ├── CMakeLists.txt
-│   ├── config
-│   │   └── cam_mono.yaml
-│   ├── launch
-│   │   └── mono.launch.py
-│   ├── package.xml
-│   └── src
-│       ├── hybrid_astar_planner_node.cpp
-│       └── ros2_mono.cpp
-└── README.md
-
-4 directories, 7 files
-
 # < Isaac ros command >
 
 cd ${ISAAC_ROS_WS}/src/isaac_ros_common && \

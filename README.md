@@ -1,3 +1,7 @@
+# environment
+docker containor 환경
+ubuntu 22.04
+
 # location
 ~/workspaces/isaac_ros-dev/Portable_ORB_SLAM2/Examples/ROS2
 
